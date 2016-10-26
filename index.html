@@ -29,18 +29,10 @@
         x = w.innerWidth || e.clientWidth || g.clientWidth,
         y = w.innerHeight|| e.clientHeight|| g.clientHeight;
     if((/iPhone|iPod|iPad|Android|BlackBerry/).test(navigator.userAgent)){
-      document.getElementById("topad").innerHTML = smallad_mobile;
     }
     else{
-      if(x < 728){
-        document.getElementById("UHACHATPARENT").style.width = "320px";
-      }
-      else{
-        document.getElementById("UHACHATPARENT").style.width = "728px";
-      }
-      if(y < 400){
-        document.getElementById("UHACHATPARENT").style.height = "200px";
-      }
+      document.getElementById("UHACHATPARENT").style.width = "100%";
+      document.getElementById("UHACHATPARENT").style.height = "300px";
     }
   </script>  
 
