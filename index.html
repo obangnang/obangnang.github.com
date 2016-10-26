@@ -25,9 +25,6 @@
         g = d.getElementsByTagName('body')[0],
         x = w.innerWidth || e.clientWidth || g.clientWidth,
         y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-    var smallad_mobile = '<iframe width="320" height="50" allowtransparency="true" src="http://mtab.clickmon.co.kr/pop/wp_m_320.php?PopAd=CM_M_1003067%7C%5E%7CCM_A_1015525%7C%5E%7CAdver_M_1003115" frameborder="0" scrolling="no"></iframe>';
-    var smallad = '<iframe width="200" height="200" allowtransparency="true" src="http://tab2.clickmon.co.kr/pop/wp_ad_200.php?PopAd=CM_M_1003067%7C%5E%7CCM_A_1015525%7C%5E%7CAdver_M_1003115" frameborder="0" scrolling="no"></iframe>';
-    var largead = '<iframe width="728" height="90" allowtransparency="true" src="http://tab2.clickmon.co.kr/pop/wp_ad_728.php?PopAd=CM_M_1003067%7C%5E%7CCM_A_1015525%7C%5E%7CAdver_M_1003115" frameborder="0" scrolling="no"></iframe>';
     //var smallad = '<a href="http://myunggung.com" target="_blank"><img src="/sponsor_ad.jpg"></a>';
     var largead = smallad;
     if((/iPhone|iPod|iPad|Android|BlackBerry/).test(navigator.userAgent)){
@@ -35,11 +32,9 @@
     }
     else{
       if(x < 728){
-        document.getElementById("topad").innerHTML = smallad;
         document.getElementById("UHACHATPARENT").style.width = "320px";
       }
       else{
-        document.getElementById("topad").innerHTML = largead;
         document.getElementById("UHACHATPARENT").style.width = "728px";
       }
       if(y < 400){
